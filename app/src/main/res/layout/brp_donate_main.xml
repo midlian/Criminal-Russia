@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    android:id="@+id/brp_donate_main"
+    android:visibility="gone"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <criminal.russia.custom.util.NonSwipeableViewPager
+        android:id="@+id/brp_donate_vp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_215sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@+id/brp_donate_tabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/ic_donate_back_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/brp_donate_tabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingLeft="@dimen/_10sdp"
+        app:layout_constraintHorizontal_bias="0.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/brp_donate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Эконом"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/brp_donate_tabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/_73sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/ic_donate_close"
+        app:layout_constraintBottom_toTopOf="@+id/brp_donate_tabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/llbalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/brp_donate_title"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/brp_donate_title"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:src="@drawable/ic_donate_rub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <criminal.russia.custom.animations.text.EvaporateTextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:fontFamily="@font/rubik_regular"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llvault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/brp_donate_title"
+        app:layout_constraintEnd_toStartOf="@+id/llbalance"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/brp_donate_title">
+
+        <ImageView
+            android:src="@drawable/ic_donate_vault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <criminal.russia.custom.animations.text.EvaporateTextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:fontFamily="@font/rubik_regular"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/donate_add_vault_bg"
+        android:drawablePadding="@dimen/_4sdp"
+        android:fontFamily="@font/rubik_medium"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:text="Пополнить"
+        android:textColor="#337BE7"
+        android:textSize="@dimen/_14sdp"
+        app:drawableLeftCompat="@drawable/ic_donate_plus"
+        app:layout_constraintBottom_toBottomOf="@+id/brp_donate_title"
+        app:layout_constraintEnd_toStartOf="@+id/llvault"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/brp_donate_title" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/brp_donate_tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_43sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        app:tabMode="scrollable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabIndicator="@color/transparent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

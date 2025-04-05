@@ -1,0 +1,42 @@
+{
+  "stringTable": {
+    "0": "C:/_CPP/santrope-core-client/apk/app/.cxx/cmake/debug/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi --gcc-toolchain=C:/_CPP/ndk1COPY/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/_CPP/ndk1COPY/sysroot -DUnZipFile_EXPORTS -isystem C:/_CPP/ndk1COPY/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem C:/_CPP/ndk1COPY/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem C:/_CPP/ndk1COPY/sources/cxx-stl/gnu-libstdc++/4.9/include/backward -isystem C:/_CPP/ndk1COPY/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "C:\\_CPP\\santrope-core-client\\apk\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "C:\\_CPP\\ndk1COPY\\build\\cmake\\android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Loony-dev\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\_CPP\\santrope-core-client\\apk\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Loony-dev\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\_CPP\\santrope-core-client\\apk\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "UnZipFile-Debug-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\Loony-dev\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\_CPP\\santrope-core-client\\apk\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" UnZipFile",
+      "buildType": "debug",
+      "toolchain": "2183771221",
+      "abi": "armeabi-v7a",
+      "artifactName": "UnZipFile",
+      "files": [
+        {
+          "src": "C:\\_CPP\\santrope-core-client\\apk\\app\\src\\main\\cpp\\UnZipFile.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\_CPP\\santrope-core-client\\apk\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libUnZipFile.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "2183771221": {
+      "cppCompilerExecutable": "C:\\_CPP\\ndk1COPY\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

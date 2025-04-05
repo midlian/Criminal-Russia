@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_re" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:gravity="center" android:id="@+id/brp_launcher_settings_back" android:background="@null" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_10sdp" android:drawableStart="@drawable/ic_arrow_back" android:paddingStart="@dimen/_10sdp" android:layout_marginStart="@dimen/_10sdp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/_30sdp" android:textColor="#ffffffff" android:id="@+id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Настройки" android:textAllCaps="true" android:fontFamily="@font/montserrat_bold" app:layout_constraintBottom_toTopOf="@id/lllt" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.496" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/brp_launcher_settings_back" app:layout_constraintVertical_bias="0.114" />
+    <TextView android:textSize="@dimen/_10sdp" android:textColor="#ffffffff" android:id="@+id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Приведите в порядок вашу игру" android:fontFamily="@font/montserrat_regular" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.497" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/textView10" />
+    <ScrollView android:scrollbarSize="@dimen/_4sdp" android:scrollbarThumbVertical="@drawable/quest_scrollbar_vertical_thumb" android:scrollbarTrackVertical="@drawable/quest_scrollbar_vertical_track" android:scrollbarStyle="outsideOverlay" android:id="@+id/lllt" android:paddingTop="@dimen/_15sdp" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/_395sdp" android:layout_marginBottom="@dimen/_50sdp" android:fadeScrollbars="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/textView11">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingRight="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_9sdp" android:textColor="#80fcf7f7" android:id="@+id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:text="@string/nick_name" android:fontFamily="@font/montserrat_bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.132" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/textView11" />
+
+            <EditText
+                android:id="@+id/brp_launcher_settings_nick"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/ic_name_input_bg"
+                android:digits="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM_"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/montsserat_semibold"
+                android:hint="Имя_Фамилия"
+                android:inputType="text"
+                android:paddingStart="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="#E8E8E8"
+                android:textColorHint="#94ffffff"
+                android:textSize="@dimen/_10sdp"
+                app:drawableLeftCompat="@drawable/ic_user"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView12" />
+            <TextView android:textSize="@dimen/_9sdp" android:textColor="#80fcf7f7" android:id="@+id/switch2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_25sdp" android:text="@string/new_graphics" android:fontFamily="@font/montserrat_bold" />
+
+            <RadioGroup
+                android:id="@+id/bpr_launcher_settings_graphics_group"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/brp_launcher_settings_new_graphics_on"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/select_rb_left_selector"
+                    android:button="@color/transparent"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="ВКЛ"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RadioButton
+                    android:id="@+id/brp_launcher_settings_new_graphics_off"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/select_rb_right_selector"
+                    android:button="@color/transparent"
+                    android:checked="true"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="ВЫКЛ"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+            </RadioGroup>
+            <LinearLayout android:orientation="vertical" android:id="@+id/test5" android:layout_width="@dimen/_250sdp" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/fps_l">
+
+                <Button
+                    android:id="@+id/brp_launcher_reinstall"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/ic_settings_btn_2"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Переустановить игру"
+                    android:textAllCaps="false"
+                    android:textColor="#D1D1D1" />
+            </LinearLayout>
+            <TextView android:textSize="17.0dip" android:textColor="#fffcf7f7" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_17sdp" android:text="Следи за новостями" android:textAllCaps="false" android:fontFamily="@font/roboto_bold" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/brp_launcher_settings_links" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:id="@+id/imageViewTelegram" android:layout_width="@dimen/_49sdp" android:layout_height="@dimen/_49sdp" android:src="@drawable/ic_telegram" android:layout_marginStart="@dimen/_10sdp" />
+                <ImageView android:id="@+id/imageViewVK" android:layout_width="@dimen/_49sdp" android:layout_height="@dimen/_49sdp" android:src="@drawable/ic_vk" android:layout_marginStart="@dimen/_10sdp" />
+                <ImageView android:id="@+id/imageViewDiscord" android:layout_width="@dimen/_49sdp" android:layout_height="@dimen/_49sdp" android:src="@drawable/ic_discord" android:layout_marginStart="@dimen/_10sdp" />
+            </LinearLayout>
+            <TextView android:textSize="20.0dip" android:textColor="#ff30b3ff" android:gravity="center_horizontal" android:id="@+id/brp_forum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Игровой форум" android:drawablePadding="@dimen/_5sdp" android:textAllCaps="false" android:fontFamily="@font/akrobat_bold" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/brp_launcher_play" app:layout_constraintStart_toStartOf="@id/brp_launcher_play" app:layout_constraintTop_toBottomOf="@id/brp_launcher_play" app:layout_constraintVertical_bias="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

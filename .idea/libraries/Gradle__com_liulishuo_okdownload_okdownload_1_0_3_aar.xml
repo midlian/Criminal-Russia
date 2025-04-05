@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liulishuo.okdownload:okdownload:1.0.3@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/66d91a696a6bca19ef1bacd6eff51023/transformed/jetified-okdownload-1.0.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.9/transforms/66d91a696a6bca19ef1bacd6eff51023/transformed/jetified-okdownload-1.0.3/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liulishuo.okdownload/okdownload/1.0.3/1cac550404defe05fed2d363f9eaf4234c92d730/okdownload-1.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liulishuo.okdownload/okdownload/1.0.3/ac0f9ad5590c4582447e9ced2f96573623585aea/okdownload-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

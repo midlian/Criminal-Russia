@@ -1,0 +1,9 @@
+{
+  "ndkVersionFromDsl": "16.1.4479499",
+  "ndkDirProperty": "C:\\_CPP\\ndk1COPY",
+  "sdkFolder": "C:\\Users\\Loony-dev\\AppData\\Local\\Android\\Sdk",
+  "sideBySideNdkFolderNames": [
+    "21.1.6352462",
+    "21.2.6472646"
+  ]
+}

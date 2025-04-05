@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Criminal_Russia.iml" filepath="$PROJECT_DIR$/.idea/modules/Criminal_Russia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Criminal_Russia.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Criminal_Russia.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Criminal_Russia.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Criminal_Russia.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Criminal_Russia.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Criminal_Russia.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Criminal_Russia.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Criminal_Russia.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

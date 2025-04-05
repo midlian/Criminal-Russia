@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_fl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom">
+
+    <SurfaceView
+        android:id="@+id/main_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7">
+
+        <ImageView
+            android:id="@+id/imageViewBtnOpen"
+            android:layout_width="84dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="6dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btn_server_menu"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageViewBtnDonateOpen"
+            android:layout_width="46dp"
+            android:layout_height="85dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBtnOpen"
+            app:layout_constraintStart_toEndOf="@+id/imageViewBtnOpen"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBtnOpen"
+            app:srcCompat="@drawable/btn_server_donate"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/rpc_gps"
+            android:layout_width="73dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/rpc_greenzone"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBtnOpen"
+            app:srcCompat="@drawable/rpc_gps" />
+
+        <ImageView
+            android:id="@+id/rpc_greenzone"
+            android:layout_width="66dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBtnOpen"
+            app:srcCompat="@drawable/rpc_greenzone" />
+
+        <include
+            layout="@layout/hassle_speed_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/main_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#A2FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.nvidia.devtech.CustomEditText
+            android:id="@+id/main_et_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/main_but_input_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:minWidth="11dip"
+            android:minHeight="11dip"
+            android:text="&#x22C1;"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_but_input_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:minWidth="11dip"
+            android:minHeight="11dip"
+            android:text="&#x22C0;"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_but_input_slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:minWidth="11dip"
+            android:minHeight="11dip"
+            android:text="/"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <include layout="@layout/bspeed_layout" />
+    <include layout="@layout/brp_dialog"/>
+    <include layout="@layout/bhud_layout"/>
+    <include layout="@layout/brp_dialog_item"/>
+    <include layout="@layout/act_b_tab"/>
+
+    <include layout="@layout/brp_spawn_selector"/>
+    <!--<include layout="@layout/brp_ss_item"/>-->
+
+    <include layout="@layout/brp_loading"/>
+</FrameLayout>

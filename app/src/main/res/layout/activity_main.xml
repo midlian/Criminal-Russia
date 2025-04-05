@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayouts" android:background="@drawable/bg_re" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:gravity="center" android:id="@+id/brp_launcher_settings_btn" android:background="@null" android:paddingLeft="@dimen/_10sdp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_10sdp" android:drawableStart="@drawable/ic_settings_new_icon" android:layout_marginEnd="@dimen/_10sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/_17sdp" android:textColor="#ffffffff" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_17sdp" android:text="Новости" android:fontFamily="@font/montserrat_bold" android:layout_marginStart="@dimen/_22sdp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/brp_launcher_settings_btn" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rvNews" android:layout_width="fill_parent" android:layout_height="@dimen/_129sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginStart="@dimen/_22sdp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/textView3" />
+    <TextView android:textSize="@dimen/_17sdp" android:textColor="#ffffffff" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:text="Наши сервера" android:fontFamily="@font/montserrat_bold" android:layout_marginStart="@dimen/_22sdp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rvNews" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvServers"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+    <Button
+        android:id="@+id/brp_launcher_play"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/bg_play_without_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvServers" />
+</androidx.constraintlayout.widget.ConstraintLayout>

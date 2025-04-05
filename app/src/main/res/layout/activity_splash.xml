@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:background="@drawable/bg_re" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/logo_no_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/_15sdp" android:textColor="#ffffff" android:id="@+id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Загрузка лаунчера..." android:fontFamily="@font/montserrat_regular" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView7" app:layout_constraintVertical_bias="0.927"/>
+
+    <LinearLayout
+        android:id="@+id/brp_launcher_privacy"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:alpha="0"
+        android:background="@drawable/bg_dialog_pre"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.13">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/akrobat_extrabold"
+            android:gravity="center"
+            android:text="Запуская это приложение вы\nсоглашаетесь с"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/brp_launcher_privacy_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/akrobat_bold"
+            android:gravity="center"
+            android:text="@string/privacy"
+            android:textColor="#3db9ff"
+            android:textSize="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/brp_launcher_privacy_ok"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:background="@drawable/ic_btn_bg"
+                android:fontFamily="@font/akrobat_semibold"
+                android:text="Окей"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <Button
+                android:id="@+id/brp_launcher_privacy_decline"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="@drawable/ic_btn_bg_2"
+                android:fontFamily="@font/akrobat_semibold"
+                android:text="Нет"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@+id/brp_launcher_not_memory_permissions" android:background="@drawable/bg_dialog_pre" android:visibility="gone" android:layout_width="@dimen/_260sdp" android:layout_height="@dimen/_170sdp" android:alpha="0" app:layout_constraintBottom_toTopOf="@+id/textView14" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView7" app:layout_constraintVertical_bias="0.13">
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/textView2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Вы отказали в доступе внутренней памяти устройства. Перезапустите лаунчер и одобрите разрешение на память." android:fontFamily="@font/akrobat_extrabold" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.235"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:src="@drawable/hot_face" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@+id/brp_launcher_not_internet" android:background="@drawable/bg_dialog_pre" android:visibility="gone" android:layout_width="@dimen/_260sdp" android:layout_height="@dimen/_170sdp" android:alpha="0" app:layout_constraintBottom_toTopOf="@+id/textView14" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView7" app:layout_constraintVertical_bias="0.13">
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/textView3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Отсутствует интернет!\nПроверьте подключение к сети" android:fontFamily="@font/akrobat_extrabold" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.235"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:src="@drawable/pensive_face" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/speedometerMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sp_background"
+    android:visibility="gone">
+
+
+
+    <ImageView
+        android:id="@+id/speed_main_bac"
+        android:layout_width="469dp"
+        android:layout_height="204dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        app:srcCompat="@drawable/sp_main" />
+
+    <ImageView
+        android:id="@+id/sp_closed"
+        android:layout_width="73dp"
+        android:layout_height="97dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sp_closed" />
+
+    <ImageView
+        android:id="@+id/sp_engine_icon"
+        android:layout_width="19dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/sp_closed"
+        app:layout_constraintEnd_toEndOf="@+id/sp_closed"
+        app:layout_constraintStart_toStartOf="@+id/sp_closed"
+        app:srcCompat="@drawable/sp_engine_icon" />
+
+    <ImageView
+        android:id="@+id/sp_engine_text"
+        android:layout_width="36dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/sp_engine_icon"
+        app:layout_constraintStart_toStartOf="@+id/sp_engine_icon"
+        app:layout_constraintTop_toBottomOf="@+id/sp_engine_icon"
+        app:srcCompat="@drawable/sp_engine_text" />
+
+    <ImageView
+        android:id="@+id/sp_neon_icon"
+        android:layout_width="18dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/sp_closed"
+        app:layout_constraintTop_toBottomOf="@+id/sp_engine_icon"
+        app:srcCompat="@drawable/sp_neon_icon_grey" />
+
+    <ImageView
+        android:id="@+id/sp_neon_text"
+        android:layout_width="20dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="-4dp"
+        app:layout_constraintEnd_toEndOf="@+id/sp_neon_icon"
+        app:layout_constraintStart_toStartOf="@+id/sp_neon_icon"
+        app:layout_constraintTop_toBottomOf="@+id/sp_neon_icon"
+        app:srcCompat="@drawable/sp_neon_text" />
+
+    <ImageView
+        android:id="@+id/sp_lock_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toStartOf="@+id/sp_closed"
+        app:layout_constraintTop_toBottomOf="@+id/sp_neon_text"
+        app:srcCompat="@drawable/sp_lock_icon" />
+
+    <ImageView
+        android:id="@+id/sp_lock_text"
+        android:layout_width="28dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/sp_lock_icon"
+        app:layout_constraintStart_toStartOf="@+id/sp_lock_icon"
+        app:layout_constraintTop_toBottomOf="@+id/sp_lock_icon"
+        app:srcCompat="@drawable/sp_lock_text" />
+
+    <ImageView
+        android:id="@+id/sp_stroboscope_icon"
+        android:layout_width="26dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/sp_closed"
+        app:layout_constraintStart_toStartOf="@+id/sp_closed"
+        app:layout_constraintTop_toBottomOf="@+id/sp_closed"
+        app:srcCompat="@drawable/sp_stroboscope_icon_grey" />
+
+    <ImageView
+        android:id="@+id/sp_stroboscope_text"
+        android:layout_width="74dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/sp_stroboscope_icon"
+        app:layout_constraintStart_toStartOf="@+id/sp_stroboscope_icon"
+        app:layout_constraintTop_toBottomOf="@+id/sp_stroboscope_icon"
+        app:srcCompat="@drawable/sp_stroboscope_text" />
+
+    <ImageView
+        android:id="@+id/sp_parking_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@+id/sp_closed"
+        app:layout_constraintTop_toBottomOf="@+id/sp_engine_icon"
+        app:srcCompat="@drawable/sp_parking_icon_on" />
+
+    <ImageView
+        android:id="@+id/sp_parking_text"
+        android:layout_width="25dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/sp_parking_icon"
+        app:layout_constraintStart_toStartOf="@+id/sp_parking_icon"
+        app:layout_constraintTop_toBottomOf="@+id/sp_parking_icon"
+        app:srcCompat="@drawable/sp_parking_text" />
+
+    <ImageView
+        android:id="@+id/sp_light_icon"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintStart_toEndOf="@+id/sp_closed"
+        app:layout_constraintTop_toBottomOf="@+id/sp_parking_text"
+        app:srcCompat="@drawable/sp_light_icon" />
+
+    <ImageView
+        android:id="@+id/sp_light_text"
+        android:layout_width="57dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="@+id/sp_light_icon"
+        app:layout_constraintStart_toStartOf="@+id/sp_light_icon"
+        app:layout_constraintTop_toBottomOf="@+id/sp_light_icon"
+        app:srcCompat="@drawable/sp_light_text" />
+
+    <LinearLayout
+        android:id="@+id/sp_linearLayoutEngine"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/sp_closed"
+        app:layout_constraintEnd_toEndOf="@+id/sp_closed"
+        app:layout_constraintStart_toStartOf="@+id/sp_closed"></LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sp_linearLayoutPark"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/sp_light_icon"
+        app:layout_constraintStart_toEndOf="@+id/sp_closed"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sp_linearLayoutLight"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_closed"
+        app:layout_constraintStart_toEndOf="@+id/sp_closed"></LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sp_linearLayoutStrab"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/sp_closed"
+        app:layout_constraintStart_toStartOf="@+id/sp_closed"
+        app:layout_constraintTop_toBottomOf="@+id/sp_closed"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sp_linearLayoutLock"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/sp_closed"
+        app:layout_constraintStart_toStartOf="@+id/sp_linearLayoutNeon"
+        app:layout_constraintTop_toBottomOf="@+id/sp_neon_text"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sp_linearLayoutNeon"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="31dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/sp_closed"
+        app:layout_constraintTop_toTopOf="@+id/sp_engine_icon">
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

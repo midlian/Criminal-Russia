@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">BRILLIANT RP</string>
+    <string name="default_notification_channel_id">Notification</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="donate_pay"><u>Пополнить счёт</u></string>
+    <string name="check_cache"><font color='#FCF7F7'>Проверка целостности файлов </font>(для сборок)</string>
+    <string name="nick_name"><font color='#FCF7F7'>Ваш ник-нейм. </font>(пример: Ivan_Ivanov)</string>
+    <string name="privacy"><u>Политикой конфиденциальности</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fuel_default_text">50 л</string>
+    <string name="speed_default_text">228</string>
+    <string name="mileage_default_text">000000</string>
+    <string name="brp_welcome">brp_welcome</string>
+    <string name="start_game">НАЧАТЬ ИГРАТЬ</string>
+    <string name="select_spawn_title">Выберите место появления</string>
+    <string name="select_spawn_desc">Укажите одно из доступных мест, где вы хотели бы появится</string>
+    <string name="exit_pos_title">Место выхода</string>
+    <string name="select_pos">ВЫБРАТЬ МЕСТО</string>
+    <string name="azs">Заправочная станция</string>
+    <string name="input_fuel">Введите кол-во топлива</string>
+    <string name="full">ПОЛНЫЙ</string>
+    <string name="max_fuel_in_vehicle">Вместимость вашего бака</string>
+    <string name="azs_releaze_price">Стоимость заправки</string>
+    <string name="buy_car_number">Покупка гос.номера</string>
+    <string name="quests">Квесты</string>
+    <string name="exit">Выход</string>
+    <string name="change_number_price">Изменение номера\t\t <font color='#6BFF73'>₽ 2,000</font></string>
+    <string name="buy_number_price">Номерные знаки\t\t\t\t <font color='#6BFF73'>₽ 5,000</font></string>
+    <string name="new_graphics"><font color='#FCF7F7'>Улучшение графики </font>(Beta)</string>
+    <string name="donate_stock">Акции</string>
+    <string name="donate_services">Услуги</string>
+    <string name="donate_transport">Транспорт</string>
+    <string name="donate_skins">Скины</string>
+    <string name="donate_boxex">Наборы</string>
+    <string name="donate_vip">Вип</string>
+    <string name="donate_cloths">Аксессуары</string>
+    <string name="vehicle_type_economy">Эконом</string>
+    <string name="vehicle_type_middle">Средний</string>
+    <string name="vehicle_type_elite">Элитный</string>
+    <string name="vehicle_type_exclusive">Эксклюзив</string>
+    <string name="example_ru_num">x777am 777</string>
+    <string name="example_ua_num">AA 7777 AA</string>
+    <string name="example_by_num">1234 AB-7</string>
+    <string name="example_kz_num">444epa 77</string>
+    <string name="old_price"><strike>50</strike></string>
+
+    <string name="players_list_header_dialog">Список игроков</string>
+    <string name="players_list_search_hint">Поиск игрока</string>
+    <string name="players_list_header_first_column">ID</string>
+    <string name="players_list_header_fourth_column">Пинг</string>
+    <string name="players_list_header_second_column">Ник игрока</string>
+    <string name="players_list_header_third_column">Уровень</string>
+
+
+    <string name="weapon">0<font color='#80FFFFFF'> / 0</font></string>
+    <string name="msg_token_fmt" />
+
+</resources>

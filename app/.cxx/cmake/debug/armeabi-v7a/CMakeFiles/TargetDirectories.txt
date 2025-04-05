@@ -1,0 +1,3 @@
+C:/_CPP/santrope-core-client/apk/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/UnZipFile.dir
+C:/_CPP/santrope-core-client/apk/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/_CPP/santrope-core-client/apk/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/donate_page_item_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_190sdp">
+
+    <TextView
+        android:id="@+id/brp_donate_vehicles_type_title"
+        android:layout_width="@dimen/_155sdp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Эконом"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/brp_donate_vehicles_type_img"
+        app:layout_constraintEnd_toEndOf="@+id/brp_donate_vehicles_type_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/brp_donate_vehicles_type_title"
+        app:layout_constraintTop_toBottomOf="@+id/brp_donate_vehicles_type_title"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:text="от"
+            android:textColor="#337BE7"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/brp_donate_vehicles_type_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_3sdp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:text="25"
+            android:textColor="#337BE7"
+            android:textSize="@dimen/_13sdp"
+            app:drawableLeftCompat="@drawable/ic_donate_vault" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:src="@drawable/ic_donate_right_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/brp_donate_vehicles_type_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/brp_donate_vehicles_type_title" />
+
+    <ImageView
+        android:id="@+id/brp_donate_vehicles_type_img"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_128sdp"
+        android:src="@drawable/donate_test_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

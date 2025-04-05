@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "213161822539",
+    "project_id": "criminal-russia-e1ac2",
+    "storage_bucket": "criminal-russia-e1ac2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213161822539:android:6a181b499a7621c52400ce",
+        "android_client_info": {
+          "package_name": "criminal.russia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAljNLFv4d8qrSlr6FvInG9Ju7hfvjJ5NA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

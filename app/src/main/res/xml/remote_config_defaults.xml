@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultMap>
+    <entry>
+        <key>game</key>
+        <value>{"game":{"cache_url":"https://maga-matvey-samp-cdn.itcloud.io/hassle/v99999/","enable_update":false,"files_count":3,"launcher_url":"https://maga-matvey-samp-cdn.itcloud.io/hassle/hassle_v3.apk","samp_url":"https://cdn.hyperguard.su/client_1834/games/sueta/v1/","settings_file_url":"https://brilliantrp-samp-cdn.itcloud.io/new_launcher2/game/settings.ini","space_available":4500,"version_game":11,"version_launcher":121,"version_samp":1}}</value>
+    </entry>
+    <entry>
+        <key>news</key>
+        <value>{"news":[{"button":"Подписаться","description":"Подпишись на наш новый Telegram канал, чтобы быть в курсе новостей проекта!","image_url":"https://i.imgur.com/GWslGmo.png","link":"https://t.me/vine_games","title":"Запустили Telegram канал :)"},{"button":"Обратиться","description":"Появился вопрос? Нашёл баг? Скорее сообщи об этом в техническую поддержку проекта!","image_url":"https://i.imgur.com/rCY7X6K.png","link":"https://vk.com/gta_mobile","title":"Техническая Поддержка"}]}</value>
+    </entry>
+    <entry>
+        <key>accesstest</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>access</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>servers</key>
+        <value>{"servers":[{"double_exp":false,"image_url":"https://brilliantrp-samp-cdn.itcloud.io/new_launcher2/motitoring/01.png","max_online":1000,"name":"HASSLE BONUS","online":450,"shipping":false,"update":true}]}</value>
+    </entry>
+ </defaultMap>

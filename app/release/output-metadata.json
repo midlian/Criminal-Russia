@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "criminal.russia",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 29,
+      "versionName": "3.1-brilliant-3.1",
+      "outputFile": "3.1-brilliant-3.1.apk"
+    }
+  ],
+  "elementType": "File",
+  "minSdkVersionForDexing": 19
+}

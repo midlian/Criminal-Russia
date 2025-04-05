@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.akexorcist:round-corner-progress-bar:2.2.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/8.9/transforms/93c739771ab4961c07ecc0c9ec60a0c6/transformed/jetified-round-corner-progress-bar-2.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/93c739771ab4961c07ecc0c9ec60a0c6/transformed/jetified-round-corner-progress-bar-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/93c739771ab4961c07ecc0c9ec60a0c6/transformed/jetified-round-corner-progress-bar-2.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.akexorcist/round-corner-progress-bar/2.2.0/7549627ea89d9cff0bf65389faa920543c73c494/round-corner-progress-bar-2.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.akexorcist/round-corner-progress-bar/2.2.0/d46538aa9d058678d08d0889b29db4e9b8928e5c/round-corner-progress-bar-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

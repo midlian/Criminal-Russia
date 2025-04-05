@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mileagebg">
+        <shape>
+            <corners android:radius="@dimen/_3sdp" />
+
+            <gradient
+                android:startColor="#334B96EE"
+                android:endColor="#33234DB9"
+                android:angle="225">
+            </gradient>
+
+            <stroke
+                android:width="@dimen/_1sdp"
+                android:color="#8FB5FF" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/brp_quests_info_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!--// BG //-->
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/quests"
+        android:scaleType="fitXY"
+        android:src="@drawable/quests_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/brp_quests_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/quests"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--// Exit btn //-->
+    <TextView
+        android:id="@+id/brp_quests_info_close_btn"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/exit_btn_bg"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Назад"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/brp_quests_info_img"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:contentDescription="@string/quests"
+        android:src="@drawable/dialog_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/brp_quests_info_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearLayout5"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_180sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintStart_toEndOf="@+id/brp_quests_info_img"
+        app:layout_constraintTop_toTopOf="@+id/brp_quests_info_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/brp_quests_info_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Text\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText\nText"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"/>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/brp_quests_info_task"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Text Text Text Text Text"
+                android:fontFamily="@font/montsserat_semibold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/brp_quests_info_reward"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/quest_item_reward_bg"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Награда\n500EXP 1000$"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/brp_quests_info_start"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <TextView
+        android:id="@+id/brp_quests_info_start"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/quest_item_start_btn_bg"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Начать"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toEndOf="@+id/brp_quests_info_img"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_re">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="НЕ ЗАКРЫВАЙТЕ И НЕ СВОРАЧИВАЙТЕ ПРИЛОЖЕНИЕ ДО ЗАВЕРШЕНИЯ ЗАГРУЗКИ"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/brp_launcher_load_progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/loading_progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brp_launcher_load_progress_titile" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/brp_launcher_load_unzip_progress2"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:indicatorColor="#3db9ff"
+        app:layout_constraintBottom_toBottomOf="@+id/brp_launcher_load_progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/brp_launcher_load_progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/brp_launcher_load_progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/brp_launcher_load_progress_bar"
+        app:trackColor="#80131418"
+        app:trackCornerRadius="@dimen/_100sdp"
+        app:trackThickness="@dimen/_10sdp" />
+
+
+    <TextView
+        android:id="@+id/brp_launcher_load_unzip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montsserat_semibold"
+        android:text="Идет распаковка архива..."
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/brp_launcher_load_progress_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Подготовка к загрузке..."
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@id/brp_launcher_load_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/brp_launcher_load_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="0%"
+        android:textColor="#ff30b3ff"
+        android:textSize="@dimen/_10sdp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/brp_launcher_load_progress_titile"
+        app:layout_constraintEnd_toEndOf="@id/brp_launcher_load_progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/brp_launcher_load_progress_titile" />
+
+    <TextView
+        android:id="@+id/brp_launcher_load_progress_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="0.0 MB из 0.0 MB"
+        android:textColor="#ff30b3ff"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brp_launcher_load_progress_bar" />
+
+    <ImageView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="@drawable/logo_no_map"
+        android:fontFamily="@font/montserrat_bold"
+        android:shadowColor="#3383E5"
+        android:shadowRadius="30"
+        android:textColor="#ffffff"
+        android:textSize="52sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

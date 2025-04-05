@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/_CPP/santrope-core-client/apk/app/.cxx/cmake/release/armeabi-v7a",
+  "command": "C:\\_CPP\\ndk1COPY\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi --gcc-toolchain=C:/_CPP/ndk1COPY/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=C:/_CPP/ndk1COPY/sysroot  -DUnZipFile_EXPORTS -isystem C:/_CPP/ndk1COPY/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem C:/_CPP/ndk1COPY/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem C:/_CPP/ndk1COPY/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem C:/_CPP/ndk1COPY/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Os -DNDEBUG  -fPIC   -o CMakeFiles\\UnZipFile.dir\\UnZipFile.cpp.o -c C:\\_CPP\\santrope-core-client\\apk\\app\\src\\main\\cpp\\UnZipFile.cpp",
+  "file": "C:\\_CPP\\santrope-core-client\\apk\\app\\src\\main\\cpp\\UnZipFile.cpp"
+}
+]
